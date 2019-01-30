@@ -12,6 +12,6 @@ describe('App', () => {
     });
 
     it('should render a <Layout /> higher order component', () => {
-        expect(wrapper.containsMatchingElement(<Layout />)).toEqual(true);
+        expect(wrapper.find('Layout').length).toEqual(1);
     });
 });
