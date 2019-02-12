@@ -1,20 +1,22 @@
+@import '../../../style/shared.scss';
+
 $header-height: 3.5rem;
 
 .Layout {
-    height: 100%;
+    @extend %full-height;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: $header-height auto 8rem;
+    grid-template-rows: $header-height auto fit-content(8rem);
     grid-template-areas: "header header header header" 
                          "side main main main"
                          "footer footer footer footer";
 }
 
 .Header {
+    @extend %full-width;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     height: $header-height;
     background: green;
 }
@@ -32,4 +34,6 @@ $header-height: 3.5rem;
 .Footer {
     background: purple;
     grid-area: footer;
+    padding: 2rem 0;
+    margin-top: 3rem;
 }
