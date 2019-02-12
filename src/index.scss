@@ -10,6 +10,11 @@ html, body, #root {
     @extend %full-height;
 }
 
+:root {
+    --color-slate-gray: #778899;
+    --color-dark-gray: #39424B;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
         "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

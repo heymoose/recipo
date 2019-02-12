@@ -18,21 +18,23 @@ $header-height: 3.5rem;
     top: 0;
     left: 0;
     height: $header-height;
-    background: green;
+    background: var(--color-dark-gray);
+    color: white;
 }
 
 .Sidebar {
-    background: blue;
+    background: white;
     grid-area: side;
 }
 
 .Main {
-    background: red;
+    background: var(--color-slate-gray);
     grid-area: main;
 }
 
 .Footer {
-    background: purple;
+    background: var(--color-dark-gray);
+    color: white;
     grid-area: footer;
     padding: 2rem 0;
     margin-top: 3rem;
