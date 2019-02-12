@@ -1,0 +1,30 @@
+.Layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3.5rem auto 8rem;
+    grid-template-areas: "header header header header" 
+                         "side main main main"
+                         "footer footer footer footer";
+    
+}
+
+.Header {
+    background: green;
+    grid-area: header;
+}
+
+.Sidebar {
+    background: blue;
+    grid-area: side;
+}
+
+.Main {
+    background: red;
+    grid-area: main;
+}
+
+.Footer {
+    background: purple;
+    grid-area: footer;
+}
