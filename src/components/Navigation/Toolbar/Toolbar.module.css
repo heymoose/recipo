@@ -1,0 +1,9 @@
+.Toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Icon {
+    margin: 0 0.5rem;
+}

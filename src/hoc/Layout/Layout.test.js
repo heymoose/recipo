@@ -1,13 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Layout from './Layout';
+import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 
 describe('Layout', () => {
     let wrapper;
     beforeEach(() => (wrapper = shallow(<Layout />)));
 
-    it('should render a <header />', () => {
-        expect(wrapper.find('header').length).toEqual(1);
+    it('should render a <Toolbar />', () => {
+        expect(wrapper.find(Toolbar).length).toEqual(1);
     });
 
     it('should render a <main />', () => {
