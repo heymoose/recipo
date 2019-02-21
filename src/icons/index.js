@@ -1,12 +1,12 @@
 import React from 'react';
-import ForkAndKnife from './ForkAndKnife/ForkAndKnife';
+import ForkAndKnife from './ForkAndKnife';
 
-const icon = ({ iconName }) => {
+const icon = props => {
     let i = null;
 
-    switch (iconName) {
+    switch (props.iconName) {
         case 'forkandknife':
-            i = <ForkAndKnife />;
+            i = <ForkAndKnife {...props} />;
             break;
         default: i = null;
     }
