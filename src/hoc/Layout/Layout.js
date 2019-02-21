@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
+import Footer from '../../components/Navigation/Footer/Footer';
 import style from './Layout.module.scss';
 
 // Icon credit
@@ -14,7 +15,8 @@ class Layout extends Component {
                 <main className={style.Main}>
                     {this.props.children}
                 </main>
-                <footer className={style.Footer}>footer</footer>
+                {/* <footer className={style.Footer}>footer</footer> */}
+                <Footer className={style.Footer} />
             </div>
         );
     }

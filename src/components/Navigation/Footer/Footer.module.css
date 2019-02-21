@@ -1,0 +1,28 @@
+.FooterItems {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FooterLink {
+    margin: 0.5rem 0;
+}
+
+.FooterLink > a {
+    text-decoration: none;
+    color: #faebd7;
+}
+
+@media (min-width: 40rem) {
+    .FooterItems {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .FooterLink {
+        margin: 0 1rem;
+    }
+}
