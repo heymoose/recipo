@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Toolbar from './Toolbar';
 
-describe('Layout', () => {
+describe('Toolbar', () => {
     let wrapper;
     beforeEach(() => (wrapper = shallow(<Toolbar />)));
 

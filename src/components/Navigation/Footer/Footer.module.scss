@@ -1,7 +1,8 @@
+@import '../../../../style/shared.scss';
+
 .FooterItems {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    @extend %no-padding-no-margin,
+            %no-list;
     display: flex;
     flex-direction: column;
     align-items: center;

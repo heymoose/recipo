@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from '../../../icons';
-import style from './Toolbar.module.css';
+import style from './Toolbar.module.scss';
 
 const toolbar = props => {
     const toolbarStyles = [props.className, style.Toolbar].join(' ');

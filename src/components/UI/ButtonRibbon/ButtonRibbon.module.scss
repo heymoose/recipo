@@ -1,0 +1,22 @@
+@import '../../../../style/shared.scss';
+
+.ButtonList {
+    @extend %no-padding-no-margin,
+            %no-list;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.RibbonButton {
+    border-style: initial;
+    padding: 0.25rem 1rem;
+}
+
+.RibbonButton:focus {
+    outline: none;
+}
+
+.ButtonList li:not(:last-child) .RibbonButton {
+    border-right: 1px solid black;
+}

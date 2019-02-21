@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Footer.module.css';
+import style from './Footer.module.scss';
 
 const footer = props => {
     const footerStyles = [props.className].join(' ');
