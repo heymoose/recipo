@@ -13,7 +13,7 @@
 
 .FooterLink > a {
     text-decoration: none;
-    color: #faebd7;
+    color: var(--color-off-white);
 }
 
 @media (min-width: 40rem) {
